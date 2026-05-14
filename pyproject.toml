@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-salience"
+version = "0.2.0"
+description = "Deterministic salience, similarity, threshold, drift, and loop diagnostics for local agents."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Agent Salience Contributors" }]
+dependencies = []
+
+keywords = ["agents", "salience", "similarity", "thresholds", "local-first", "agentic", "loops", "idf"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/seslak/agent-salience"
+Repository = "https://github.com/seslak/agent-salience"
+Issues = "https://github.com/seslak/agent-salience/issues"
